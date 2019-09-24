@@ -25,3 +25,4 @@
 
 ### mode
 파일에 대한 권한설정
+https://downman.tistory.com/67
