@@ -1,6 +1,6 @@
 # 0917
 
--int open(char* filePath, oflag, MODE)
+-int open(char* filePath, int oflag, mode_t mode)
 
 ### oflag
 - O_RDONLY 0
@@ -22,3 +22,6 @@
 	넌블로킹 모드로 입출력 하도록 한다.
 - O_SYNC 	1052672
 	write() 시스템 호출을 하면 디스크에 물리적으로 쓴 후 반환된다
+
+### mode
+파일에 대한 권한설정
