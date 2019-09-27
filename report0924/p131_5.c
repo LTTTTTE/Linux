@@ -19,8 +19,14 @@ int main(int argc, char* argv[]){
 	while((reads = read(fd, buf, 500)) > 0){
 		countReads += reads;
 		for(int i = 0; i < 500; i++){
-			if(buf[i] == '\n') lines++;
-			if(buf[i] == ' ') words++;
+			if(buf[i] == '\n'){
+			     	lines++;
+				countReads--;
+			}
+			if(buf[i] == ' '){
+			       	words++;
+				countReads--;
+			}
 		}
 	}
 	words += lines - 1;
