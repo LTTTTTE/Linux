@@ -8,7 +8,7 @@ int main(int argc, char* argv[]){
 	char buf[500];
 	int chars = 0;
 	int words = 1;
-	int lines = 0;
+	int lines = 1;
 	int reads;
 	int countReads = 0;
 	if((fd = open(argv[1],O_RDONLY)) == -1){
