@@ -28,7 +28,7 @@ int main(int argc, char* argv[]){
 		for(int i = 0; i < 500; i++){
 			if(buf1[i] != buf2[i]){
 				index += i;
-				printf("\n %d 번째 문자가 다릅니다.\n",index - 1);
+				printf("\n %d 번째 문자가 다릅니다.\n",index);
 				break;
 			}
 		}
